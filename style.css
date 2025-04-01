@@ -1,57 +1,47 @@
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: space-around;
-    background-color: #f4f4f4;
-  }
-  
-  #container {
-    display: flex;
-    width: 80%;
-    margin-top: 20px;
-  }
-  
-  #movie-details {
-    width: 60%;
-    padding: 20px;
-    background-color: #fff;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  }
-  
-  #poster {
-    max-width: 100%;
-    height: auto;
-  }
-  
-  #films {
-    width: 30%;
-    list-style-type: none;
-    padding: 0;
-  }
-  
-  #films li {
-    padding: 10px;
-    margin-bottom: 10px;
-    background-color: #fff;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    cursor: pointer;
-  }
-  
-  #films li.sold-out {
-    background-color: #ffcccc;
-  }
-  
-  button {
-    padding: 10px 20px;
-    background-color: #28a745;
-    color: #fff;
-    border: none;
-    cursor: pointer;
-  }
-  
-  button:disabled {
-    background-color: #ccc;
-    cursor: not-allowed;
-  }
+.container {
+  display: flex;
+}
+.sidebar {
+  width: 250px;
+  padding: 20px;
+  background-color: #f0f0f0;
+}
+#films {
+  list-style: none;
+  padding: 0;
+}
+.film.item {
+  padding: 10px;
+  margin: 5px 0;
+  background-color: white;
+  cursor: pointer;
+}
+.film.item:hover {
+  background-color: #e0e0e0;
+}
+.sold-out {
+  background-color: #ffcccc;
+}
+.main-content {
+  flex: 1;
+  padding: 20px;
+}
+#poster {
+  max-width: 300px;
+  height: auto;
+}
+.delete-btn {
+  margin-left: 10px;
+  background-color: #ff4444;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+.delete-btn:hover {
+  background-color: #cc0000;
+}
+#buy-ticket:disabled {
+  background-color: #cccccc;
+  cursor: not-allowed;
+}
